@@ -3,7 +3,7 @@
         define(['./ascii-art'], factory);
     } else if (typeof module === 'object' && module.exports) {
         
-        module.exports = factory(require('./ascii-art'));
+        module.exports = factory(require('../ascii-art'));
         
     } else {
         root.chalk = factory(function(){
