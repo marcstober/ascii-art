@@ -77,7 +77,7 @@
   },
   "bin": "./bin/ascii-art",
   "scripts": {
-    "test": "./node_modules/mocha/bin/mocha",
+    "test": "node ./node_modules/mocha/bin/mocha.js",
     "chalk-test": "./node_modules/mocha/bin/mocha test/extras/kaolin-test.js",
     "browser-test": "./node_modules/karma/bin/karma start",
     "test-data": "node generate.js save",
