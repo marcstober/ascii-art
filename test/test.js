@@ -17,11 +17,11 @@
             }, should);
         });
     } else if (typeof module === 'object' && module.exports) {
-        module.exports = factory(require('../art'), require('ascii-art-ansi/color'), require('color-difference'), require('fs'), require('chai').should());
+        module.exports = factory(require('../art'), require('ascii-art-ansi/color'), require('color-difference'), require('fs'), require('path'), require('chai').should());
     } else {
         throw new Error('global testing not supported!');
     }
-}(this, function (art, Color, difference, fs, should) {
+}(this, function (art, Color, difference, fs, path, should) {
     var isNode = typeof module === 'object' && module.exports;
 
     function testImage(options, callback, complete){
@@ -36,10 +36,10 @@
         });
     }
 
-    function testGraph(name, text, cb){
+    function testGraph(name, text, cb) {
         var simple = fs.readFile(
-            __dirname+'/../node_modules/ascii-art-graph/test/data/'+name,
-            function(err, result){
+            __dirname + '/../node_modules/ascii-art-graph/test/data/' + name,
+            function (err, result) {
                 should.not.exist(err);
                 text.should.equal(result.toString());
                 cb();
@@ -71,7 +71,7 @@
         })
     }
 
-    var parentDir = __dirname.split('/');
+    var parentDir = __dirname.split(path.sep);
     parentDir.pop();
     //if(! (typeof module === 'object' && module.exports)) parentDir.pop();
     parentDir = parentDir.join('/');

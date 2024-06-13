@@ -68,7 +68,7 @@
     "karma-phantomjs-launcher": "1.0.2",
     "karma-requirejs": "1.1.0",
     "karma-should": "1.0.0",
-    "mocha": "*",
+    "mocha": "^10.4.0",
     "requirejs": "2.3.2",
     "should": "*"
   },
@@ -81,7 +81,7 @@
   },
   "bin": "./bin/ascii-art",
   "scripts": {
-    "test": "./node_modules/mocha/bin/mocha",
+    "test": "node ./node_modules/mocha/bin/mocha.js",
     "chalk-test": "./node_modules/mocha/bin/mocha test/extras/kaolin-test.js",
     "browser-test": "./node_modules/karma/bin/karma start",
     "test-data": "node generate.js save",
