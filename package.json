@@ -51,7 +51,8 @@
     "ascii-art-table": "1.0.1",
     "ascii-art-utf": "0.0.1",
     "dirname-shim": "1.0.0",
-    "strangler": "^1.1.2"
+    "strangler": "^1.1.2",
+    "yargs": "^17.7.2"
   },
   "devDependencies": {
     "ascii-art-docs": "^0.0.1",
@@ -78,9 +79,8 @@
   },
   "bin": "./bin/ascii-art",
   "scripts": {
-    "test": "node ./node_modules/mocha/bin/mocha.js",
+    "test": "node ./node_modules/mocha/bin/mocha",
     "chalk-test": "node ./node_modules/mocha/bin/mocha test/extras/kaolin-test.js",
-    "browser-test": "./node_modules/karma/bin/karma start",
     "test-data": "node generate.js save",
     "dev-link": "npx module-auto-link -c 'npm-auto-link'",
     "sample": "node generate.js"
