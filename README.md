@@ -8,6 +8,8 @@
 ascii-art.js
 ============
 
+*This is a fork of [Khrome's ascii-art](https://github.com/khrome/ascii-art) that fixes [#27](https://github.com/khrome/ascii-art/issues/27) and updates some dependencies... hopefully it will be merged back into the original package soon.*
+
 [![NPM version](https://img.shields.io/npm/v/ascii-art.svg)]()
 [![npm](https://img.shields.io/npm/dt/ascii-art.svg)]()
 [![Travis](https://img.shields.io/travis/khrome/ascii-art.svg)]()

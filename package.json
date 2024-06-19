@@ -1,5 +1,5 @@
 {
-  "name": "ascii-art",
+  "name": "@marcstober/ascii-art",
   "homepage": "https://github.com/khrome/ascii-art",
   "version": "2.7.1",
   "main": "art.js",
