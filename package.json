@@ -1,7 +1,7 @@
 {
   "name": "@marcstober/ascii-art",
   "homepage": "https://github.com/khrome/ascii-art",
-  "version": "2.7.1",
+  "version": "2.7.2",
   "main": "art.js",
   "description": "Ansi codes, figlet fonts, and ascii art. 100% JS",
   "keywords": [
@@ -54,6 +54,7 @@
     "browser-request": "0.3.3",
     "canvas": "1.6.9",
     "dirname-shim": "1.0.0",
+    "open": "^10.1.0",
     "strangler": "^1.1.2",
     "yargs": "*"
   },
@@ -69,6 +70,7 @@
     "karma-requirejs": "1.1.0",
     "karma-should": "1.0.0",
     "mocha": "^10.4.0",
+    "require-uncached": "^2.0.0",
     "requirejs": "2.3.2",
     "should": "*"
   },
