@@ -4,6 +4,7 @@ var yargs = require('yargs');
 var fs = require('fs');
 var art = require('../art');
 var Color = require('ascii-art-ansi/color');
+var Font = require('ascii-art-font');
 yargs.usage('Usage: $0 <command> [options] <target>')
 yargs.command('image', 'convert an image to ascii')
     .command('art', 'get some ascii art from various sites')
@@ -335,7 +336,7 @@ switch(action){
                 if (err){
                     console.error('There was an error retrieving the font '+target);
                 }else{
-                    var dir = argv.g?process.cwd()+'/Fonts/':__dirname+'/../Fonts/';
+                    var dir = argv.g ? process.cwd() + '/Fonts/' : Font.fontPath;
                     fs.writeFile(dir+target.toLowerCase()+'.flf', str, function(err){
                         ftp.raw("quit", function(err, data) {
                             if (err) return console.error(err);
